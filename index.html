@@ -15,20 +15,45 @@
   <body>
     <section id="landing-page">
       <h1 class="landing__h1">Find your movie</h1>
-      
-        <input
-          class="landing__search"
-          type="search"
-          name=""
-          placeholder="search by title"
-          id="landing__search"
-          onsearch="searchFunction(event)"
-          oninput="goToResults(event)"
-        />
-        
+
+      <input
+        class="landing__search"
+        type="search"
+        name=""
+        placeholder="search by title"
+        id="landing__search"
+        onsearch="searchFunction(event)"
+        autocomplete="off"
+      />
     </section>
     <section id="results">
-     
+      <div class="results__loading">
+        <i class="fa-solid fa-spinner"></i>
+      </div>
+
+      <div class="results__input--container">
+        <h3>Go to page</h3>
+        <input
+          type="number"
+          id="number"
+          value="1"
+          max="100"
+          min="1"
+          onchange="getNumber(event)"
+        />
+      </div>
+      <div class="results__cards"></div>
+      <div class="results__input--container">
+        <h3>Go to page</h3>
+        <input
+          type="number"
+          id="number__2"
+          value="1"
+          max="100"
+          min="1"
+          onchange="getNumber__2(event)"
+        />
+      </div>
     </section>
   </body>
 </html>
