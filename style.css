@@ -146,8 +146,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .results__card--outer {
   width: calc(100% / 3);
-  padding-top: 50%;
   position: relative;
+  padding-top: 50%;
 }
 
 .results__card--inner {
@@ -230,6 +230,12 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-left: 8px;
 }
 
+@media (max-width: 840px) {
+  .landing__search {
+    width: 560px;
+  }
+}
+
 @media (max-width: 768px) {
   .landing__search {
     width: 400px;
@@ -237,5 +243,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .results__card--outer {
     width: calc(100% / 2);
+    padding-top: 70%;
   }
 }
